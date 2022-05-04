@@ -3,4 +3,13 @@ const nextConfig = {
   reactStrictMode: true,
 }
 
-module.exports = nextConfig
+const WindiCSSWebpackPlugin = require('windicss-webpack-plugin')
+
+module.exports = {
+  // ...
+  nextConfig,
+  webpack(config) {
+    config.plugins.push(new WindiCSSWebpackPlugin())
+    return config
+  },
+}
