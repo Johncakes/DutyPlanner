@@ -9,7 +9,7 @@ workers = [{'name': '김민기', 'vac': False, 'wType': 't', 'points': 0, 'rec_p
 
 # list of numbers
 looper = 1
-for loops in range(5):
+for loops in range():
   numbers = [1,4.1,2.1,3.1,4.2,5,3.2,2.2]
 
   # number of people
@@ -26,7 +26,7 @@ for loops in range(5):
     min_avg_worker['rec_point'].append(number)
     min_avg_worker['p_avg'] = min_avg_worker['points'] /len(numbers)*looper 
 
-  looper+=1
+  looper+=/
 
   # for x in workers:
   #  print(x['name'],x['points'],x['p_avg'])
@@ -35,10 +35,10 @@ for loops in range(5):
 
 #printing recorded points
 for p in workers:
-  print(p['name'],end='')
+  #print(p['name'],end=/',')
   for x in p['rec_point']:
     print(x,end=',')
-  print(' ')
+  print()
 
 # for p in workers:
 #   print(p['points'])
