@@ -1,4 +1,3 @@
-
 no_work = 0
 hardWork =0
 totalListLen = 0
@@ -19,7 +18,7 @@ for people in range(34):
      hardWork += 1
 
 
-print('average no workdays :', totalListLen/no_work)
-print('No work days: ', no_work/17)
-print('average hard work days:', totalListLen//hardWork)
-print('hardWork : ', hardWork/17)
+print('No duty per', totalListLen//no_work,'days')
+print('Average Duties per person :', no_work//17)
+print('Hard duty per', totalListLen//hardWork,'days')
+print('Average hard duties per person :', hardWork//17)
